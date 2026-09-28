@@ -67,6 +67,8 @@ The transformation rule:
 - keep the original information architecture and content hierarchy
 - keep navigation, cards, and task structure recognizable
 - redraw borders, icons, dividers, and selected typography with relaxed hand-drawn lines
+- replace clean vector contours rather than adding a second sketch contour
+- use one visible line per edge; never use double-line or ghost tracing
 - allow small spacing and proportion irregularities
 - keep the overall interface calm, readable, and usable
 
@@ -91,6 +93,21 @@ Shortcut:
 ```text
 #ImperfectDoodles
 ```
+
+## Important — Single-stroke outlines
+
+For image-to-image transformation, **do not keep the original vector outline and add a second sketch line on top of it**.
+
+The handmade feeling should come from **one imperfect contour**:
+
+- one form = one contour
+- one edge = one stroke
+- no double-line outlines
+- no parallel sketch contours
+- no ghost / offset tracing
+- redraw, don't overlay
+
+> **Hand-drawn feeling must come from one imperfect contour, not from a second contour.**
 
 ## Core principle
 

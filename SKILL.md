@@ -103,6 +103,39 @@ Keep the imperfection visible but restrained.
 
 ---
 
+# 2.1 Single-Stroke Outline Rule
+
+This rule is critical, especially for image-to-image transformation.
+
+Each visible edge should be represented by **one single contour only**.
+
+Do not preserve a clean vector contour and then add another loose hand-drawn contour on top of it.
+Do not create a trace-over effect.
+Do not use doubled outlines, parallel outlines, ghost outlines, offset sketch lines, or repeated border tracing to fake a handmade feeling.
+
+A hand-drawn look should come from the **single contour itself** being imperfect:
+
+- slight wobble
+- uneven pressure
+- minor asymmetry
+- small positional error
+- awkward proportion
+
+It should NOT come from adding a second contour.
+
+Hard rule:
+
+**One form = one contour.**  
+**One edge = one stroke.**  
+**Redraw, don't overlay.**
+
+If emphasis is needed, vary stroke weight slightly instead of adding a second parallel line.
+
+The final result should feel like a person drew the shape once,
+not like the model traced the same edge twice.
+
+---
+
 # 3. Awkward Proportions Are Good
 
 Objects should feel intuitively drawn rather than geometrically constructed.
@@ -419,6 +452,29 @@ not the underlying function.
 
 ---
 
+# 13.1 Image-to-Image Conversion Rule
+
+When transforming an existing image, icon, illustration, or UI into Imperfect Doodles:
+
+- preserve the original structure and meaning
+- **replace** precise vector edges with single imperfect hand-drawn contours
+- simplify contours when needed
+- keep one visible line per edge
+
+Do not:
+
+- keep the original vector outline and add a sketch line on top
+- create two parallel contour lines
+- create ghosted or offset outlines
+- simulate sketchiness through repeated tracing
+- leave both the original clean line and the handmade line visible
+
+The transformation should look **redrawn**, not traced over.
+
+**Hand-drawn feeling must come from one imperfect contour, not from a second contour.**
+
+---
+
 # 14. Before / After Logic
 
 ## Before
@@ -499,6 +555,23 @@ Fix:
 Redraw each icon separately with subtle differences,
 while keeping overall consistency.
 
+## Failure 7 — Double-line outline / ghost tracing
+
+Problem:
+The model keeps the original clean contour, then adds another sketchy line around or beside it.
+Some models also use two parallel contour lines to imitate sketchiness.
+
+Why this is wrong:
+It creates a duplicated, ghosted, traced-over appearance instead of a relaxed human-drawn line.
+
+Fix:
+Use only one visible contour per shape.
+Redraw the original contour itself as a slightly imperfect single stroke.
+
+Do not stack a sketch line on top of a vector line.
+
+**Replace the line — do not decorate the line.**
+
 ---
 
 # Trigger Examples
@@ -552,7 +625,9 @@ Use icons such as:
 ## Change
 
 - redraw each icon by hand
-- introduce subtle line wobble
+- replace the original vector contour instead of layering on top of it
+- use a single visible contour per edge
+- introduce subtle line wobble inside that single contour
 - make proportions slightly uneven
 - use black / charcoal line work
 
@@ -566,6 +641,9 @@ The icons should still work as UI icons.
 - excessive color
 - different styles across icons
 - perfect vector geometry
+- double-line outlines
+- parallel sketch contours
+- keeping the original vector edge under a second hand-drawn edge
 
 ---
 
