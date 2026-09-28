@@ -373,27 +373,80 @@ Remember:
 
 # 11. Color
 
-Default visual direction:
+Do not force a specific background color.
 
-- warm off-white / cream background
-- black or charcoal line work
-- optional pale blue accent
+The Imperfect Doodles style is defined primarily by:
 
-Use color sparingly.
+- line quality
+- awkward proportions
+- handmade imperfection
+- relaxed visual rhythm
+- clear structure
 
-Prefer flat color.
+It is **not** defined by a fixed background color.
 
-Avoid:
+## Background Color Priority
 
-- glossy gradients
-- neon colors
-- metallic effects
-- heavy shadows
-- excessive color variation
-- generic AI glow
+When editing or transforming an existing image, UI, layout, poster, card, or design:
 
-Color should support the relaxed feeling,
-not compete with the drawing.
+1. **Preserve the original or existing background color first**
+2. Keep the existing color atmosphere whenever possible
+3. Do not replace the background just to make the result feel more handmade
+4. Only change the background if the user explicitly asks for it
+5. Only make minimal background adjustments when readability or contrast requires it
+
+When working from an existing design,
+the goal is to transform the drawing language,
+not to unnecessarily replace the color system.
+
+## From-Scratch Generation
+
+When generating a new design from scratch:
+
+- the background color may be chosen freely
+- choose it based on the content, mood, context, and visual hierarchy
+- it does not need to be off-white, cream, beige, or paper-colored
+- white, black, blue, gray, warm neutrals, saturated colors, or other suitable backgrounds are all acceptable
+
+A paper-like or cream background may be used
+when it supports the concept,
+but it is never mandatory.
+
+## Palette Behavior
+
+Use the existing palette first.
+
+For transformations:
+
+- preserve the original palette
+- preserve the original background
+- preserve the dominant visual mood
+- only introduce new accent colors when necessary
+
+For new designs:
+
+- keep the palette simple and intentional
+- choose colors based on the specific task
+- avoid excessive gradients, glossy effects, or unnecessary rendering
+
+Color should support the drawing,
+not define the style by itself.
+
+## Important
+
+Do not use a cream or paper-colored background
+as a shortcut for “handmade.”
+
+Handmade feeling should come from:
+
+- one imperfect contour
+- slight line wobble
+- uneven pressure
+- awkward proportions
+- small human mistakes
+- subtle asymmetry
+
+not from forcing every design onto the same background.
 
 ---
 
@@ -452,24 +505,58 @@ not the underlying function.
 
 ---
 
-# 13.1 Image-to-Image Conversion Rule
+# 13.1 Background Preservation Rule
 
-When transforming an existing image, icon, illustration, or UI into Imperfect Doodles:
+Do not replace the original or existing background color
+unless the user explicitly asks for it.
 
-- preserve the original structure and meaning
-- **replace** precise vector edges with single imperfect hand-drawn contours
-- simplify contours when needed
-- keep one visible line per edge
+In image-to-image or UI transformation tasks:
+
+- preserve the existing background color first
+- preserve the original visual atmosphere first
+- preserve the current color relationships whenever possible
+- transform the line language, not the background by default
+
+If the background needs adjustment,
+keep the change minimal and functional.
+
+Important:
+
+**Preserve the background. Transform the drawing language.**
+
+---
+
+# 13.2 Image-to-Image Conversion Rule
+
+When transforming an existing clean image, UI, illustration, icon, layout, or poster into Imperfect Doodles style:
+
+- redraw outlines as single hand-drawn contours
+- simplify precise vector edges into one imperfect stroke
+- preserve the original structure and hierarchy
+- preserve the original or existing background color whenever possible
+- preserve the existing overall color atmosphere
+- change only the parts necessary to introduce the Imperfect Doodles visual language
 
 Do not:
 
-- keep the original vector outline and add a sketch line on top
-- create two parallel contour lines
-- create ghosted or offset outlines
-- simulate sketchiness through repeated tracing
-- leave both the original clean line and the handmade line visible
+- keep the original precise outline and add a second sketch line
+- create doubled border edges
+- simulate sketchiness with parallel contour lines
+- leave both the vector line and handmade line visible at the same time
+- introduce ghost outlines or offset tracing
+- replace the background color unless explicitly requested
+- automatically convert the background to cream, beige, or paper texture
+- change the overall palette unnecessarily
 
-The transformation should look **redrawn**, not traced over.
+The transformed result should look **redrawn**, not traced over.
+
+The background should feel preserved,
+not restyled by default.
+
+Important:
+
+**Redraw, don't overlay.**  
+**Preserve the background, transform the line language.**
 
 **Hand-drawn feeling must come from one imperfect contour, not from a second contour.**
 
@@ -660,8 +747,8 @@ A tiny music note floats nearby.
 
 ## Visual Direction
 
-- warm cream background
-- black imperfect line work
+- preserve the chosen or existing background color
+- black or context-appropriate imperfect line work
 - lots of empty space
 - simple handwritten phrase
 - relaxed composition
@@ -704,17 +791,18 @@ Do not destroy usability.
 When creating an Imperfect Doodles design:
 
 1. Establish a calm, simple composition.
-2. Protect the hierarchy and function.
-3. Remove unnecessary decoration.
-4. Reduce objects to simple recognizable forms.
-5. Choose where handmade personality should appear.
-6. Set an imperfection budget for each object.
-7. Draw with minimal strokes.
-8. Break geometric perfection selectively.
-9. Vary repeated objects slightly.
-10. Check that the result still feels relaxed.
-11. Restore empty space if the design feels busy.
-12. Stop before the design becomes overworked.
+2. Preserve the original background and color atmosphere when transforming existing work.
+3. Protect the hierarchy and function.
+4. Remove unnecessary decoration.
+5. Reduce objects to simple recognizable forms.
+6. Choose where handmade personality should appear.
+7. Set an imperfection budget for each object.
+8. Draw with minimal strokes.
+9. Break geometric perfection selectively.
+10. Vary repeated objects slightly.
+11. Check that the result still feels relaxed.
+12. Restore empty space if the design feels busy.
+13. Stop before the design becomes overworked.
 
 ---
 
@@ -733,7 +821,8 @@ Before finishing, ask:
 9. Do all icons feel drawn by the same hand?
 10. Is the UI still usable?
 11. Does the result feel human rather than AI-clean?
-12. Did I stop before over-designing it?
+12. Did I unnecessarily change the original background or color system?
+13. Did I stop before over-designing it?
 
 If everything looks too correct,
 introduce one small human mistake.
@@ -748,5 +837,8 @@ restore structure and breathing room — not polish.
 Do not make the design intentionally bad.
 
 Make it intentionally human.
+
+Preserve what already works.
+Only transform what needs to feel more handmade.
 
 **Too correct is the most AI-looking choice.**
